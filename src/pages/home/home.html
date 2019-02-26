@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center!important;">Alert Dialogue Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Alert's Available in Ionic
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button round full (click)="basicAlert()">Basic Alert</button><br />
+      <button ion-button round full (click)="promptAlert()">Prompt Alert</button><br />
+      <button ion-button round full (click)="confirmAlert()">Confirm Alert</button><br />
+      <button ion-button round full (click)="radioAlert()">Radio Alert</button><br />
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="show">
+    <ion-card-header>
+      Output
+    </ion-card-header>
+    <ion-card-content>
+      {{ out }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p padding-left style="text-align: center!important;">Created By: <a href="https://github.com/MandaliyaPruthvi">Pruthvi
+        Mandaliya</a></p>
+  </ion-toolbar>
+</ion-footer>
